@@ -31,7 +31,7 @@ class Solution:
     def reverseBits(self, n: int) -> int:
         result = 0
         i = 0
-        while n != 0 and i < 32:
+        while i < 32:
             bit = (n >> i) & 1
             result = result | (bit << (31-i))
             i += 1
